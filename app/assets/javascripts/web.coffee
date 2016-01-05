@@ -11,4 +11,10 @@ class Web
     clearTextEntry: ->
         $("textarea").val("")
 
+    uploadFile: ->
+        console.log('yo')
+        debugger
+        console.log('yo')
+
+
 window.Web = new Web
