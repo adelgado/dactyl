@@ -11,7 +11,11 @@
         <label class="mui-form-floating-label">Write or paste any text here</label>
     </div>
     <div class="buttons">
-	    <button type="submit" class="mui-btn mui-btn-default mui-btn-primary mui-btn-raised" onclick="javascript:$(this).attr('disabled', 'disabled'); $('#this-form').submit();">Analyze</button>
-	    <%= link_to "Clear", 'javascript:$("textarea").val("")', class: "mui-btn mui-btn-default mui-btn-raised" %>
+        <button type="submit"
+            class="mui-btn mui-btn-default mui-btn-primary mui-btn-raised"
+            onclick="javascript:Web.submitTextEntry()">
+            Analyze
+        </button>
+        <%= link_to "Clear", 'javascript:Web.clearTextEntry()', class: "mui-btn mui-btn-default mui-btn-raised" %>
     </div>
 <% end %>
