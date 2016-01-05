@@ -20,7 +20,7 @@
         <tr>
             <td width="50%"><%= metric.humanize %></td>
             <td class="metric-value">
-            	<div class="scrolling-container">
+                <div class="scrolling-container">
                     <%
                         more_info = I18n.t("metric-descriptions.#{metric}", :default => '')
                         if more_info.present?
