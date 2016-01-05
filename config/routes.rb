@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get '/upload' => 'web#upload'
   post '/upload' => 'web#upload'
 
+  post '/file' => 'file#upload'
+
   get '/analysis/:reference' => 'web#show', as: 'show_dactylogram'
 
   scope :api do
